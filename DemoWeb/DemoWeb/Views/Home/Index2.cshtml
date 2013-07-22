@@ -1,0 +1,15 @@
+﻿@model DemoWeb.Models.ModeloDemo
+
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+Introduce tu edad aqui:
+<form method="post" action ="@Url.Action("Index2","Home")">
+Introduce nombre y apellido
+@Html.TextBoxFor(x => x.Nombre)
+<br />
+@Html.TextBoxFor(x => x.Apellido)
+<input type="submit" />
+</form>
